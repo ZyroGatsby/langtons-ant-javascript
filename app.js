@@ -6,40 +6,40 @@ window.onload = function () {
   setInterval(moveAnt, 1000 / 13, grid);
 };
 
-const ANTUP = 0;
-const ANTRIGHT = 1;
-const ANTDOWN = 2;
-const ANTLEFT = 3;
+const UP = 0;
+const RIGHT = 1;
+const DOWN = 2;
+const LEFT = 3;
 
 class Ant {
   x = 0;
   y = 0;
 
-  direction = ANTUP;
+  direction = UP;
 
   moveForward(width, height) {
     switch (this.direction) {
-      case ANTUP:
+      case UP:
         this.x = (this.x - 1 + width) % width;
         break;
-      case ANTRIGHT:
+      case RIGHT:
         this.y = (this.y + 1 + height) % height;
         break;
-      case ANTDOWN:
+      case DOWN:
         this.x = (this.x + 1 + width) % width;
         break;
-      case ANTLEFT:
+      case LEFT:
         this.y = (this.y - 1 + height) % height;
         break;
     }
   }
 
   rotateRight() {
-    this.direction = (this.direction + 1 + (ANTLEFT + 1)) % (ANTLEFT + 1);
+    this.direction = (this.direction + 1 + (LEFT + 1)) % (LEFT + 1);
   }
 
   rotateLeft() {
-    this.direction = (this.direction - 1 + (ANTLEFT + 1)) % (ANTLEFT + 1);
+    this.direction = (this.direction - 1 + (LEFT + 1)) % (LEFT + 1);
   }
 }
 

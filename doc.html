@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <title>Langton's Ant Implementation - Documentation</title>
   </head>
   <body>
@@ -13,10 +15,43 @@
           <h3 class="text-2xl font-medium text-gray-900">L-ANT</h3>
         </div>
         <div class="space-x-8 text-gray-900">
-          <a class="text-blue-600 hover:text-gray-500" href="/">Home</a>
-          <a class="hover:text-gray-500" href="/doc.html">Info</a>
+          <a class="hover:text-gray-500" href="/">Home</a>
+          <a class="text-blue-600 hover:text-gray-500" href="/doc.html">Info</a>
         </div>
       </nav>
+      <div class="container mx-auto border rounded-lg p-4 text-lg">
+        <h1 class="text-xl">Langton's Ant Summary</h1>
+
+        <details>
+          <summary>Overview</summary>
+          <p>
+            Langton's ant is a two-dimensional universal Turing machine with a
+            very simple set of rules but complex emergent behavior. It was
+            invented by Chris Langton in 1986 and runs on a square lattice of
+            black and white cells.
+          </p>
+        </details>
+
+        <details>
+          <summary>Rules</summary>
+          <p>
+            Squares on a plane are colored variously either black or white. We
+            arbitrarily identify one square as the "ant". The ant can travel in
+            any of the four cardinal directions at each step it takes. The "ant"
+            moves according to the rules below:
+          </p>
+          <ol class="list-disc ml-6">
+            <li>
+              At a white square, turn 90° clockwise, flip the color of the
+              square, move forward one unit
+            </li>
+            <li>
+              At a black square, turn 90° counter-clockwise, flip the color of
+              the square, move forward one unit
+            </li>
+          </ol>
+        </details>
+      </div>
     </div>
   </body>
 </html>
