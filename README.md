@@ -1,6 +1,6 @@
 # Langton's Ant
 
-A Javascript Implementation.
+A JavaScript Implementation.
 
 ## Overview
 
@@ -15,4 +15,4 @@ Squares on a plane are colored variously either black or white. We arbitrarily i
 
 ## Hosted Version
 
-https://langtons-ant-javascript.vercel.app/
+<https://langtons-ant-javascript.vercel.app/>

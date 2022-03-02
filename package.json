@@ -4,7 +4,7 @@
   "description": "Javascript implementation of Langton's Ant",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/ZyroGatsby/langtons-ant-javascript/issues"
   },
-  "homepage": "https://github.com/ZyroGatsby/langtons-ant-javascript#readme"
+  "homepage": "https://github.com/ZyroGatsby/langtons-ant-javascript#readme",
+  "devDependencies": {
+    "standard": "^16.0.4",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "eslint": "^8.10.0"
+  }
 }
