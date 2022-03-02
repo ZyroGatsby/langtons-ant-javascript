@@ -39,4 +39,4 @@ jobs:
         uses: github/super-linter@v4.9.0
         env:
           FILTER_REGEX_EXCLUDE: .*css/.* #standard format
-          FILTER_REGEX_EXLUDE: .*dist/.* # config generated file
+          FILTER_REGEX_EXCLUDE: .*dist/.* # config generated file
