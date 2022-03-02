@@ -1,0 +1,24 @@
+{
+  "name": "langtons_ant",
+  "version": "1.0.0",
+  "description": "Javascript implementation of Langton's Ant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZyroGatsby/langtons-ant-javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "langton's",
+    "ant"
+  ],
+  "author": "Zyro Kamson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZyroGatsby/langtons-ant-javascript/issues"
+  },
+  "homepage": "https://github.com/ZyroGatsby/langtons-ant-javascript#readme"
+}
