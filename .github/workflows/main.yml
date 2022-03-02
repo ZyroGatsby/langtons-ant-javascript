@@ -38,4 +38,5 @@ jobs:
       - name: Super-Linter
         uses: github/super-linter@v4.9.0
         env:
-          FILTER_REGEX_EXCLUDE: .*css/.*
+          FILTER_REGEX_EXCLUDE: .*css/.* #standard format
+          FILTER_REGEX_EXLUDE: .*dist/.* # config generated file
