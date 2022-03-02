@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -38,5 +38,4 @@ jobs:
       - name: Super-Linter
         uses: github/super-linter@v4.9.0
         env:
-          FILTER_REGEX_EXCLUDE: .*css/.* #standard format
-          FILTER_REGEX_EXCLUDE: .*dist/.* # config generated file
+          FILTER_REGEX_EXCLUDE: .*css/.* #standard format & config generated file
